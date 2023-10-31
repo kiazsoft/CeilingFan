@@ -1,7 +1,6 @@
 package com.bell;
 
-import com.bell.Model.TableFan;
-import com.bell.Model.TableFan;
+import com.bell.model.TableFan;
 import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;

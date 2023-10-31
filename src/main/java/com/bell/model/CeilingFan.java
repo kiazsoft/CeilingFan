@@ -1,4 +1,4 @@
-package com.bell.Model;
+package com.bell.model;
 
 public class CeilingFan extends Fan{
     public CeilingFan(int maxSpeed){

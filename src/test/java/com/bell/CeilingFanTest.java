@@ -1,6 +1,6 @@
 package com.bell;
 
-import com.bell.Model.CeilingFan;
+import com.bell.model.CeilingFan;
 import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;

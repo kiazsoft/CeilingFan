@@ -1,4 +1,4 @@
-package com.bell.Model;
+package com.bell.model;
 
 public abstract class Fan {
     int speed;

@@ -1,4 +1,4 @@
-package com.bell.Model;
+package com.bell.model;
 
 public class TableFan extends Fan{
     public TableFan(int maxSpeed){
