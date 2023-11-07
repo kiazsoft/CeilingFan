@@ -1,6 +1,5 @@
 # Implementation of Ceiling Fan
 
-`Fan.java` is an abstract class from which `CeilingFan.java` and `TableFan.java` extends.
 
 Junit tests provided for CeilingFan functionality - `CeilingFanTest.java`
 

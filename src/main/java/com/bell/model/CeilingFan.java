@@ -1,25 +1,31 @@
 package com.bell.model;
 
-public class CeilingFan extends Fan{
+public class CeilingFan  {
+    Motor motor;
     public CeilingFan(int maxSpeed){
-        this.speed = 0;
-        this.isReverse = false;
-        this.maxSpeed = maxSpeed;
+        motor = new Motor(maxSpeed);
     }
 
     public CeilingFan pullSpeedCord(){
-        increaseSpeed();
+        motor.increaseSpeed();
         return this;
     }
 
     public CeilingFan pullDirectionCord(){
-        reverseFanDirection();
+        motor.reverseFanDirection();
         return this;
     }
 
+    public int getFanSpeed(){
+        return motor.getFanSpeed();
+    }
+
+    public boolean isFanDirectionReversed(){
+        return motor.isFanDirectionReversed();
+    }
     @Override
     public String toString() {
-        return "Fan Current State: Speed=" + speed + ", isReverse="+isReverse + ", maxSpeed="+maxSpeed;
+        return "Fan Current State: Speed=" + motor.getFanSpeed() + ", isReverse="+motor.isFanDirectionReversed() + ", maxSpeed="+motor.getMaxFanSpeed();
     }
 
 }

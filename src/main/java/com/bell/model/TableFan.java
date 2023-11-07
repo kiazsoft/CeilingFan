@@ -1,25 +1,30 @@
 package com.bell.model;
 
-public class TableFan extends Fan{
+public class TableFan {
+    Motor motor;
     public TableFan(int maxSpeed){
-        this.speed = 0;
-        this.isReverse = false;
-        this.maxSpeed = maxSpeed;
+        motor = new Motor(maxSpeed);
     }
 
     public TableFan pressSpeedButton(){
-        increaseSpeed();
+        motor.increaseSpeed();
         return this;
     }
 
     public TableFan pressDirectionButton(){
-        reverseFanDirection();
+       motor.reverseFanDirection();
         return this;
     }
+    public int getFanSpeed(){
+        return motor.getFanSpeed();
+    }
 
+    public boolean isFanDirectionReversed(){
+        return motor.isFanDirectionReversed();
+    }
     @Override
     public String toString() {
-        return "Fan Current State: Speed=" + speed + ", isReverse="+isReverse + ", maxSpeed="+maxSpeed;
+        return "Fan Current State: Speed=" + motor.getFanSpeed() + ", isReverse="+motor.isFanDirectionReversed() + ", maxSpeed="+motor.getMaxFanSpeed();
     }
 
 }
